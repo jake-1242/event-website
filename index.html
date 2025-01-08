@@ -4,24 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav><h1>UYR Events</h1><a href="">Home</a><a href="">About</a><a href=""></a><a href="">Contact</a></nav>
+<div class="flex-wrapper">
+<header class="header">
+  
+  <aside class="header-logo">
+    <img id="logo" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="">
+    <h1>UYR Events</h1>
+  </aside>
 
-<main>
+  <nav>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </nav>
+
+  <div id="basket">
+    <h3>Basket</h3>
+  </div>
+
+</header>
+
+
+<main class="main">
+  <div id="event-creator">
+    <form action=>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" placeholder="Your Title...">
+  
+      <label for="Description">Description</label>
+      <input type="text" id="Description" name="Description" placeholder="Description of the event...">
+  
+      <label for="Location">Location</label>
+      <input type="text" id="Description" name="Description" placeholder="Event Location...">
+
+      <label for="DateAndTime">Event Date And Time</label>
+      <div class="start-end-row">  
+        <p>Start</p>
+        <p>End</p>
+      </div>
+    
+      <div class="row">
+        <input type="datetime-local" id="DateAndTimeStart" name="DateAndTimeStart">
+        <input type="datetime-local" id="DateAndTimeEnd" name="DateAndTimeEnd">
+      </div>
+
+      <input id="event-submit" type="submit" value="Submit">
+    </form>
+  </div>
+  
 
   <div id="event-card">
-    
-    <h2>Event Name</h2>
-    
-
-
+    <h3>Event Name</h3>
+    <h3>Location</h3>
+    <h3>Details</h3>
+    <h3>Date and Time</h3>
   </div>
 
 </main>
 
 
+<footer class="footer-container">
 
+  <article class="footer-logo">
+    <img id="logo2" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="">
+  </article>
+
+  <article class="accreditation">
+    <h4>Contact</h4>
+    <p>+44 (0)1977 655 899</p>
+   <img id="accreditation" src="Assets/Images/UKAS ISO FSC.jpg" alt="UKAS ISO and FSC accreditation">
+   <p>Copyright UYR Ltd 2025</p>
+  </article>
+</footer>
+</div>
 </body>
 </html>
 

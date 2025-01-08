@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: montserrat;
+    font-weight: 500;
+    margin:0;
+    padding:0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.start-end-row{
+    display: flex;
+    flex-direction: row;
+    gap: 215px;
+}
+
+
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 30px #1c1c2415;
+}
+
+.header-logo{
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: start;
+    gap:30px;
+    align-items: center;
+    font-style:bold;
+    font-weight: 900;
+    padding: 5px;
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+    padding:0px 10px;
+}
+.main{
+    min-height:500px;
+    padding:
+}
+#basket{
+    display: flex;
+    width: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #1c1c24;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    height:50px;
+    width:50px;
+}
+
+/* form ================================== */
+
+.main{
+    margin: 50px 20px;
+}
+
+#event-creator{
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px#1c1c2448;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0px 0px 30px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=datetime-local], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 0px 0px 15px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #8f7949;
+    color: white;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #6e5a2e;
+  }
+  
+/* ============================== */
+
+
+footer{
+    display: flex;
+    margin: 0px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px;
+    box-shadow: 5px 5px 30px #1c1c2448;
+
+}
+
+.footer {
+    margin-top: auto;
+  }
+.footer-logo{
+    justify-content: start;
+}
+#logo2{
+    align-self: center;
+    height: 150px;
+}
+
+#accreditation{
+    height:150px;
+}
