@@ -8,10 +8,11 @@
 </head>
 <body>
 <div class="flex-wrapper">
+
 <header class="header">
   
   <aside class="header-logo">
-    <img id="logo" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="">
+    <img id="logo" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="UYR LOGO">
     <h1>UYR Events</h1>
   </aside>
 
@@ -29,16 +30,17 @@
 
 
 <main class="main">
-  <div id="event-creator">
-    <form action=>
+
+  <div id="eventCreator">
+    <form id ="eventForm">
       <label for="title">Title</label>
-      <input type="text" id="title" name="title" placeholder="Your Title...">
+      <input type="text" id="formTitle" name="title" placeholder="Your Title..." required>
   
       <label for="Description">Description</label>
-      <input type="text" id="Description" name="Description" placeholder="Description of the event...">
+      <input type="textarea" id="formDescription" name="Description" placeholder="Description of the event..." required>
   
       <label for="Location">Location</label>
-      <input type="text" id="Description" name="Description" placeholder="Event Location...">
+      <input type="text" id="formLocation" name="Description" placeholder="Event Location..." required>
 
       <label for="DateAndTime">Event Date And Time</label>
       <div class="start-end-row">  
@@ -47,21 +49,26 @@
       </div>
     
       <div class="row">
-        <input type="datetime-local" id="DateAndTimeStart" name="DateAndTimeStart">
-        <input type="datetime-local" id="DateAndTimeEnd" name="DateAndTimeEnd">
+        <input type="datetime-local" id="formDateAndTimeStart" name="DateAndTimeStart" required>
+        <input type="datetime-local" id="formDateAndTimeEnd" name="DateAndTimeEnd" required>
       </div>
 
       <input id="event-submit" type="submit" value="Submit">
     </form>
   </div>
-  
 
+  <ul id="eventList">
+
+  </ul>
+
+<!-- Base card -->
+<!-- 
   <div id="event-card">
     <h3>Event Name</h3>
     <h3>Location</h3>
     <h3>Details</h3>
     <h3>Date and Time</h3>
-  </div>
+  </div> -->
 
 </main>
 
@@ -80,6 +87,7 @@
   </article>
 </footer>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
 

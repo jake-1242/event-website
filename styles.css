@@ -59,8 +59,13 @@ nav{
 }
 .main{
     min-height:500px;
-    padding:
+    padding:0px;
+    display:flex;
+    flex-direction:row;
+    gap: 100px;
+    align-items: center;
 }
+
 #basket{
     display: flex;
     width: 20%;
@@ -82,25 +87,35 @@ a{
 }
 
 /* form ================================== */
-
-.main{
-    margin: 50px 20px;
+#eventCreator{
+    margin:50px;
 }
 
-#event-creator{
+#eventForm{
     height: 500px;
     width: 500px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px#1c1c2448;
     background-color: #f2f2f2;
     padding: 20px;
+    
 }
 
-input[type=text], select {
+#eventList{
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px#1c1c2448;
+    background-color: #f2f2f2;
+}
+
+input[type=text],input[type=textarea], select {
     width: 100%;
     padding: 12px 20px;
     margin: 0px 0px 30px 0px;
-    display: inline-block;
+    display: flex;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -110,7 +125,7 @@ input[type=datetime-local], select {
     width: 50%;
     padding: 12px 20px;
     margin: 0px 0px 15px 0px;
-    display: inline-block;
+    display: flex;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -131,8 +146,19 @@ input[type=datetime-local], select {
     background-color: #6e5a2e;
   }
   
-/* ============================== */
+  #event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #event-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
 
+/* ============================== */
 
 footer{
     display: flex;
