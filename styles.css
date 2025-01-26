@@ -147,7 +147,7 @@ input[type=datetime-local], select {
   }
   
   #event-list {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
   }
   
@@ -157,7 +157,45 @@ input[type=datetime-local], select {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  .event-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .event-card{
+    background-color:  #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.185);
+    margin-bottom: 15px;
+  }
 
+  .event-card-date{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .event-card-location,.event-card-description{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    gap: 5px;
+  }
+
+  .event-card-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+ }
+
+  li{
+    list-style-type: none;
+  }
+
+  hr{
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+  }
 /* ============================== */
 
 footer{
@@ -172,6 +210,7 @@ footer{
 
 .footer {
     margin-top: auto;
+    margin-bottom: 0px;
   }
 .footer-logo{
     justify-content: start;
@@ -183,4 +222,21 @@ footer{
 
 #accreditation{
     height:150px;
+}
+
+.edit-btn{
+    background-color:#8f7949;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-btn{
+    background-color: rgb(189, 44, 44);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
 }

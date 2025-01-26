@@ -3,7 +3,7 @@ const eventForm = document.getElementById('eventForm');
 const eventList = document.getElementById('eventList');
 
 eventForm.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent form submission
+  e.preventDefault(); 
   
   const title = document.getElementById('formTitle').value;
   const dateStart = document.getElementById('formDateAndTimeStart').value;
@@ -14,17 +14,29 @@ eventForm.addEventListener('submit', (e) => {
   addEventToList(title, dateStart,dateEnd, location, description);
   saveEventToLocalStorage(title, dateStart,dateEnd, location, description);
   
-  eventForm.reset(); // Clear the form fields
+  eventForm.reset(); 
 });
 
 function addEventToList(title, dateStart,dateEnd, location, description) {
   const eventItem = document.createElement('li');
   eventItem.innerHTML = `
-    <strong>${title}</strong> (${dateStart}-${dateEnd})<br>
-    Location: ${location}<br>
-    Description: ${description}<br>
-    <button class="edit-btn">Edit</button>
-    <button class="delete-btn">Delete</button>
+  <div class="event-card">
+  <article class="event-card-header"><h3>${title}</h3> <aside class="event-card-date"><p>${dateStart} - ${dateEnd}</p></article>
+  <article class="event-card-location">
+    <h4>Location</h4>
+    <p>${location}</p>
+  </article>
+  <hr>
+  <article class="event-card-description">
+  <h4>Description</h4>
+  <p>${description}</p>
+  </article>
+  <hr>
+  <aside class="event-card-buttons">
+  <button class="edit-btn">Edit</button>
+  <button class="delete-btn">Delete</button>
+  </aside>
+  </div>
   `;
   eventList.appendChild(eventItem);
 }
