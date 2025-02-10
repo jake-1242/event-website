@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="flex-wrapper">
+
+<header class="header">
+ 
+  <aside class="header-logo">
+    <img id="logo" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="UYR LOGO">
+    <h1>UYR Events</h1>
+  </aside>
+
+  <nav>
+    <a id="home" href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <button id="menu-toggle" aria-label="Toggle navigation">
+    ☰
+  </button>
+
+  <div id="basket">
+    <h3><a href="shop.html"> Basket </a></h3>
+     <section class="shopping-cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total"> Total: £0.00 </p>
+        <button id="clear-cart" class="btn">Clear Cart</button>
+      </section>
+  </div>
+
+</header>
+
+
+<main class="main">
+
+  <div id="event-dashboard">
+    <section class="event-form">
+      <form id ="create-event-form">
+
+        <label for="event-title">Title</label>
+        <input type="text" id="event-title" name="title" placeholder="Your Title..." required>
+        
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="date" required />
+        
+        <label for="event-location">Location</label>
+        <input type="text" id="event-location" name="Description" placeholder="Event Location..." required>
+            
+        <label for="event-description">Description</label>
+        <input type="textarea" id="event-description" name="Description" placeholder="Description of the event..." required>
+        
+        <input type="submit" class="btn"></input>    
+      </form>
+    </section>
+    <section class="event-list">
+      <h2>Your Events</h2>
+      <ul id="event-list"></ul>
+    </section>
+  </div>
+<!-- Base card -->
+<!-- 
+  <div id="event-card">
+    <h3>Event Name</h3>
+    <h3>Location</h3>
+    <h3>Details</h3>
+    <h3>Date and Time</h3>
+  </div> -->
+
+</main>
+
+
+<footer class="footer-container">
+
+  <article class="footer-logo">
+    <img id="logo2" src="Assets/Images/637b648ed2b343f8e79573b2_UYR GROUP LOGO - GOLD OUTLINE-p-500.png" alt="">
+  </article>
+
+  <article class="accreditation">
+    <h4>Contact</h4>
+    <p>+44 (0)1977 655 899</p>
+   <img id="accreditation" src="Assets/Images/UKAS ISO FSC.jpg" alt="UKAS ISO and FSC accreditation">
+   <p>Copyright UYR Ltd 2025</p>
+  </article>
+</footer>
+</div>
+<script src="event.js"></script>
+<script src="script.js"></script>
+<script src="shop-js.js"></script>
+</body>
+</html>
+

@@ -40,3 +40,10 @@ function addEventToList(title, dateStart,dateEnd, location, description) {
   `;
   eventList.appendChild(eventItem);
 }
+
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
