@@ -34,11 +34,9 @@ form.addEventListener('submit', (e) => {
     description: document.getElementById('event-description').value,
   };
   
-  // Add new event to array and save to local storage
   events.push(newEvent);
   localStorage.setItem('events', JSON.stringify(events));
   
-  // Reset form and refresh event list
   form.reset();
   displayEvents();
 });
@@ -47,7 +45,6 @@ displayEvents();
 
 
 
-// edit events
 function editEvent(index) {
     const event = events[index];
     document.getElementById('event-title').value = event.title;
@@ -55,16 +52,14 @@ function editEvent(index) {
     document.getElementById('event-location').value = event.location;
     document.getElementById('event-description').value = event.description;
   
-    // Remove event from list to avoid duplication
     events.splice(index, 1);
     localStorage.setItem('events', JSON.stringify(events));
     displayEvents();
   }
 
-//   delete events
 function deleteEvent(index) {
-    events.splice(index, 1); // Remove event from array
-    localStorage.setItem('events', JSON.stringify(events)); // Update localStorage
-    displayEvents(); // Refresh event list
+    events.splice(index, 1);
+    localStorage.setItem('events', JSON.stringify(events)); 
+    displayEvents(); 
   }
   

@@ -1,12 +1,12 @@
 const products = [
   { id: 1, name: "Poster", price: 10, description: "Eye-catching event poster.", image: "Assets/Images/poster.jpg" },
-  { id: 2, name: "Tent Card", price: 20, description: "Tent card to provide information on tables.", image: "Assets/Images/tent-card.jpg" }, // Fixed space issue
+  { id: 2, name: "Tent Card", price: 20, description: "Tent card to provide information on tables.", image: "Assets/Images/tent-card.jpg" }, 
   { id: 3, name: "Flyer", price: 5, description: "Handout flyers for your audience.", image: "Assets/Images/Flyer.jpg" }
 ];
 
 const productContainer = document.getElementById('products');
 const basket = document.getElementById('basket-btn');
-const shoppingCart = document.querySelector('.shopping-cart'); // Fixed selection
+const shoppingCart = document.querySelector('.shopping-cart'); 
 
 function displayProducts() {
   products.forEach(product => {
@@ -74,7 +74,7 @@ if (basket) {
 }
 
 function showCart() {
-  console.log("Basket clicked!"); // Check if the function is running
+  console.log("Basket clicked!"); 
 
   if (shoppingCart.classList.contains('visible')) {
     shoppingCart.classList.remove('visible');
